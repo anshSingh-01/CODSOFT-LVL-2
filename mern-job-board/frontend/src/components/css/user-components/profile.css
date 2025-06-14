@@ -1,0 +1,117 @@
+.profile-container {
+  max-width: 520px;
+  margin: 2.5rem auto;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(135deg, #eaffea 0%, #b6fcb6 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(34, 139, 34, 0.10);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  border: 2px solid #a3e635;
+}
+
+.profile-container h2 {
+  text-align: center;
+  color: #1a7f37;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.profile-form input[type="text"],
+.profile-form input[type="email"],
+.profile-form input[type="number"],
+.profile-form input[type="file"],
+.profile-form textarea {
+  padding: 0.8rem;
+  border: 1.5px solid #a3e635;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f6fff6;
+  transition: border 0.2s;
+}
+
+.profile-form input[type="text"]:focus,
+.profile-form input[type="email"]:focus,
+.profile-form input[type="number"]:focus,
+.profile-form textarea:focus {
+  border: 1.5px solid #22c55e;
+  outline: none;
+}
+
+.profile-form label {
+  font-weight: 500;
+  color: #1a7f37;
+  margin-bottom: 0.2rem;
+}
+
+.profile-form button {
+  background: linear-gradient(90deg, #22c55e 0%, #16a34a 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.05rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.profile-form button:hover {
+  background: linear-gradient(90deg, #16a34a 0%, #22c55e 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.profile-message {
+  margin-top: 0.7rem;
+  color: #22c55e;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.profile-details {
+  background: linear-gradient(135deg, #eaffea 0%, #d1fad1 100%);
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-top: 1.2rem;
+  box-shadow: 0 2px 12px rgba(34, 197, 94, 0.07);
+  border: 1.5px solid #a3e635;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.profile-details h3 {
+  color: #16a34a;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+}
+
+.profile-details p,
+.profile-details span {
+  color: #14532d;
+  margin-bottom: 0.3rem;
+  font-size: 1.05rem;
+}
+
+.profile-details img {
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  border: 2.5px solid #22c55e;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.13);
+  background: #fff;
+}

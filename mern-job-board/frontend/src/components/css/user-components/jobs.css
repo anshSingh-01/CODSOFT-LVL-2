@@ -1,0 +1,103 @@
+.jobs-container {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(135deg, #eaffea 0%, #b6fcb6 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(34, 139, 34, 0.10);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  border: 2px solid #a3e635;
+}
+
+.jobs-container h1 {      
+  text-align: center;
+  color: #1a7f37;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.jobs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.job-card {
+  background: linear-gradient(120deg, #f6fff6 0%, #d1fad1 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(34, 197, 94, 0.07);
+  padding: 1.5rem 1.7rem;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  border: 1.5px solid #a3e635;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.job-card h3 {
+  color: #22c55e;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.job-card p {
+  margin: 0.2rem 0;
+  color: #14532d;
+  font-size: 1.05rem;
+}
+
+.job-card:hover {
+  box-shadow: 0 6px 24px rgba(34, 197, 94, 0.13);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.job-card .job-btn {
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 7px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 0.7rem;
+  margin-top: 0.5rem;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.08);
+}
+
+.job-card .apply-btn {
+  background: linear-gradient(90deg, #22c55e 0%, #16a34a 100%);
+  color: #fff;
+}
+
+.job-card .apply-btn:hover {
+  background: linear-gradient(90deg, #16a34a 0%, #22c55e 100%);
+  transform: scale(1.05);
+}
+
+.job-card .save-btn {
+  background: linear-gradient(90deg, #a3e635 0%, #bef264 100%);
+  color: #14532d;
+}
+
+.job-card .save-btn:hover {
+  background: linear-gradient(90deg, #bef264 0%, #a3e635 100%);
+  color: #14532d;
+  transform: scale(1.05);
+}
+
+/* Add to jobs.css */
+.job-filter-input {
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #a3e635;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #f6fff6;
+  outline: none;
+  transition: border 0.2s;
+}
+.job-filter-input:focus {
+  border: 1.5px solid #22c55e;
+}

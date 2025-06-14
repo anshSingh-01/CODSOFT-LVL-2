@@ -1,0 +1,19 @@
+.candidates-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.candidates-container h2 {
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.candidates-container p {
+  color: #555;
+  font-size: 1.1rem;
+}
